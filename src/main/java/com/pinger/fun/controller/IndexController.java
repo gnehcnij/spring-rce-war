@@ -1,16 +1,10 @@
 package com.pinger.fun.controller;
 
 import com.pinger.fun.model.EvalBean;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.propertyeditors.StringTrimmerEditor;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author : p1n93r
@@ -21,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 public class IndexController {
 
     @RequestMapping("/index")
-    public void index(EvalBean evalBean){
+    public void index(EvalBean evalBean) {
         System.out.println("=================");
         System.out.println(evalBean);
         System.out.println("=================");

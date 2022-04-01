@@ -1,9 +1,7 @@
 package com.pinger.fun.model;
 
-import com.pinger.fun.controller.IndexController;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.util.ClassUtils;
 
 /**
  * @author : p1n93r
@@ -13,14 +11,12 @@ import org.springframework.util.ClassUtils;
 @Getter
 public class EvalBean {
 
+    public String name;
+    public CommonBean commonBean;
+
     public EvalBean() throws ClassNotFoundException {
         System.out.println("[+] 调用了EvalBean.EvalBean");
     }
-
-    public String name;
-
-    public CommonBean commonBean;
-
 
     public String getName() {
         System.out.println("[+] 调用了EvalBean.getName");

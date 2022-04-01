@@ -9,13 +9,12 @@ import lombok.Data;
 @Data
 public class CommonBean {
 
-    public CommonBean(){
-        System.out.println("[+] 调用了com.example.spbdemo.pojo.CommonBean.CommonBean");
-    }
-
-
     public String name;
 
+
+    public CommonBean() {
+        System.out.println("[+] 调用了com.example.spbdemo.pojo.CommonBean.CommonBean");
+    }
 
     public String getName() {
         System.out.println("[+] 调用了com.example.spbdemo.pojo.CommonBean.getName");
